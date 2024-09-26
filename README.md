@@ -3,13 +3,17 @@ About array-api-extra-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/array-api-extra-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/data-apis/array-api-extra
+Home: https://data-apis.org/array-api-extra/
 
 Package license: MIT
 
 Summary: Extra array functions built on top of the array API standard.
 
 Development: https://github.com/data-apis/array-api-extra
+
+Documentation: https://data-apis.org/array-api-extra/
+
+Extra array functions built on top of the array API standard.
 
 Current build status
 ====================
