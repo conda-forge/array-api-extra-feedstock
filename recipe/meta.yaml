@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -37,10 +37,12 @@ test:
     - numpy
 
 about:
-  home: https://github.com/data-apis/array-api-extra
+  home: https://data-apis.org/array-api-extra/
   summary: Extra array functions built on top of the array API standard.
+  description: Extra array functions built on top of the array API standard.
   license: MIT
   license_file: LICENSE
+  doc_url: https://data-apis.org/array-api-extra/
   dev_url: https://github.com/data-apis/array-api-extra
 
 extra:
