@@ -1,26 +1,27 @@
 {% set name = "array-api-extra" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/array_api_extra-{{ version }}.tar.gz
-  sha256: 91b685fc90b6c5364760053127b9ee3d256caeb3563ca327c6fc98123fd5c973
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/array_api_extra-{{ version }}.tar.gz
+  sha256: 9b7719795a823ae29f4735adc32ad820c1d975c0317b86b9d614580d420b3cda
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -31,6 +32,7 @@ test:
     - pip check
     - pytest -ra tests
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
     - array-api-strict
