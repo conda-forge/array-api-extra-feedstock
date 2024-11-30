@@ -1,5 +1,5 @@
 {% set name = "array-api-extra" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/array_api_extra-{{ version }}.tar.gz
-  sha256: 9b7719795a823ae29f4735adc32ad820c1d975c0317b86b9d614580d420b3cda
+  sha256: 364a7f810896b8d9bb393be21eb5988a1fdd27f1ec25cdac2f881d0bad770020
 
 build:
   noarch: python
