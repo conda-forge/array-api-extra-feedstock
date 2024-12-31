@@ -31,9 +31,8 @@ tests:
   - python:
       imports:
         - array_api_extra
-  - files:
-      source:
-        - tests
+  - script:
+      - pytest -ra tests
     requirements:
       run:
         - python ${{ python_min }}.*
@@ -41,9 +40,9 @@ tests:
         - pytest
         - array-api-strict
         - numpy
-    script:
-      - pip check
-      - pytest -ra tests
+    files:
+      source:
+        - tests/
 
 about:
   summary: Extra array functions built on top of the array API standard.
