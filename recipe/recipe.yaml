@@ -1,0 +1,60 @@
+schema_version: 1
+
+context:
+  name: array-api-extra
+  version: 0.4.0
+  python_min: 3.10
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/array_api_extra-${{ version }}.tar.gz
+  sha256: e3414742071b749922bce56171377bbca3d7696d0dab134f404bbc2875d83383
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}
+    - hatchling
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - array-api-compat
+
+tests:
+  - python:
+      imports:
+        - array_api_extra
+  - files:
+      source:
+        - tests
+    requirements:
+      run:
+        - python ${{ python_min }}
+        - pip
+        - pytest
+        - array-api-strict
+        - numpy
+    script:
+      - pip check
+      - pytest -ra tests
+
+about:
+  summary: Extra array functions built on top of the array API standard.
+  description: Extra array functions built on top of the array API standard.
+  license: MIT
+  license_file: LICENSE
+  homepage: https://data-apis.org/array-api-extra/
+  repository: https://github.com/data-apis/array-api-extra
+  documentation: https://data-apis.org/array-api-extra/
+
+extra:
+  recipe-maintainers:
+    - lucascolley
+
