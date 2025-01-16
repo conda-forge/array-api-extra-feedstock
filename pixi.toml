@@ -4,7 +4,7 @@
 
 [project]
 name = "array-api-extra-feedstock"
-version = "3.45.1"
+version = "3.45.2"
 description = "Pixi configuration for conda-forge/array-api-extra-feedstock"
 authors = ["@conda-forge/array-api-extra"]
 channels = ["conda-forge"]
