@@ -151,6 +151,3 @@ Feedstock Maintainers
 
 * [@lucascolley](https://github.com/lucascolley/)
 
-
-<!-- dummy commit to enable rerendering -->
-
