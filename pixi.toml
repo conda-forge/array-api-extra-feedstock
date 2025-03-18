@@ -4,11 +4,11 @@
 
 [project]
 name = "array-api-extra-feedstock"
-version = "3.45.4"
+version = "3.47.0"
 description = "Pixi configuration for conda-forge/array-api-extra-feedstock"
 authors = ["@conda-forge/array-api-extra"]
 channels = ["conda-forge"]
-platforms = ['linux-64', 'osx-64', 'win-64']
+platforms = ["linux-64", "osx-64", "win-64"]
 
 [dependencies]
 conda-build = ">=24.1"
