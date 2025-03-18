@@ -42,6 +42,7 @@ tests:
     files:
       source:
         - tests/
+        - pyproject.toml
 
 about:
   summary: Extra array functions built on top of the array API standard.
