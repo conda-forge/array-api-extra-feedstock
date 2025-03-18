@@ -38,6 +38,7 @@ tests:
         - pytest
         - array-api-strict
         - numpy
+        - hypothesis
     files:
       source:
         - tests/
