@@ -38,7 +38,7 @@ arch=$(uname -m)
 if [[ "$arch" == "x86_64" ]]; then
   arch="64"
 fi
-sed -i.bak -e "s/platforms = .*/platforms = [\"linux-${arch}\"]/" -e "s/# __PLATFORM_SPECIFIC_ENV__ =/build_linux-$arch =/" pixi.toml
+sed -i.bak -e "s/platforms = .*/platforms = [\"linux-${arch}\"]/" -e "s/# __PLATFORM_SPECIFIC_ENV__ =/build-linux-$arch =/" pixi.toml
 echo "Creating environment"
 PIXI_CACHE_DIR=/opt/conda pixi install --environment build_linux-$arch
 pixi list
