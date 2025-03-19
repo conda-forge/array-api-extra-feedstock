@@ -4,7 +4,7 @@
 
 [project]
 name = "array-api-extra-feedstock"
-version = "3.47.0"
+version = "3.44.8.dev184+g2112ff9d"
 description = "Pixi configuration for conda-forge/array-api-extra-feedstock"
 authors = ["@conda-forge/array-api-extra"]
 channels = ["conda-forge"]
@@ -32,3 +32,5 @@ lint = "conda-smithy lint recipe"
 
 [environments]
 smithy = ["smithy"]
+# This is a copy of default, to be enabled by build_steps.sh during Docker builds
+# __PLATFORM_SPECIFIC_ENV__ = []
