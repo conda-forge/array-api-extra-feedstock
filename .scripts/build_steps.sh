@@ -40,10 +40,10 @@ if [[ "$arch" == "x86_64" ]]; then
 fi
 sed -i.bak -e "s/platforms = .*/platforms = [\"linux-${arch}\"]/" -e "s/# __PLATFORM_SPECIFIC_ENV__ =/build-linux-$arch =/" pixi.toml
 echo "Creating environment"
-PIXI_CACHE_DIR=/opt/conda pixi install --environment build_linux-$arch
+PIXI_CACHE_DIR=/opt/conda pixi install --environment build-linux-$arch
 pixi list
 echo "Activating environment"
-eval "$(pixi shell-hook --environment build_linux-$arch)"
+eval "$(pixi shell-hook --environment build-linux-$arch)"
 mv pixi.toml.bak pixi.toml
 popd
 export CONDA_LIBMAMBA_SOLVER_NO_CHANNELS_FROM_INSTALLED=1
