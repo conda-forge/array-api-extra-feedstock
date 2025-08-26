@@ -7,7 +7,7 @@
 
 [project]
 name = "array-api-extra-feedstock"
-version = "3.50.0"  # conda-smithy version used to generate this file
+version = "3.52.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/array-api-extra-feedstock"
 authors = ["@conda-forge/array-api-extra"]
 channels = ["conda-forge"]
@@ -34,6 +34,7 @@ description = "List contents of array-api-extra-feedstock packages built for var
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
+shellcheck = "*"
 [feature.smithy.tasks.build-locally]
 cmd = "python ./build-locally.py"
 description = "Build packages locally using the same setup scripts used in conda-forge's CI"
