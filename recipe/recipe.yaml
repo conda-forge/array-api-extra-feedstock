@@ -14,13 +14,13 @@ source:
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  script: uv pip install --python ${{ PYTHON }} . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
-    - pip
+    - uv
+    - meson-python
   run:
     - python >=${{ python_min }}
     - array-api-compat
