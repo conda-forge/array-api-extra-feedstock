@@ -19,10 +19,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23468&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/array-api-extra-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/array-api-extra-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/array-api-extra-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
