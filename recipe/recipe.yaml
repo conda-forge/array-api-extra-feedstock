@@ -1,6 +1,6 @@
 context:
   name: array-api-extra
-  version: "0.10.3"
+  version: "0.11.0"
   python_min: '3.11'
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/array_api_extra-${{ version }}.tar.gz
-  sha256: 6cabfefe10db45f5eb4c642fc2465646ad0ed017d3774fc16d763486b31ee5ae
+  sha256: b4c0410ab19ba9a4d5e39e6ea3538c78caf31be7faf1081fb5ba0b15bfc9c517
 
 build:
   number: 0
