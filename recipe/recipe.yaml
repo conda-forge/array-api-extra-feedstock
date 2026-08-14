@@ -1,14 +1,13 @@
 context:
-  name: array-api-extra
   version: "0.11.1"
   python_min: '3.11'
 
 package:
-  name: ${{ name|lower }}
+  name: array-api-extra
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/array_api_extra-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/array-api-extra/array_api_extra-${{ version }}.tar.gz
   sha256: 360bc6faf858b1ef2ca0fb3cc86dbac0ed566fa1f78ae515cd234830c8b119f8
 
 build:
@@ -27,6 +26,9 @@ requirements:
 
 tests:
   - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       imports:
         - array_api_extra
   - script:
