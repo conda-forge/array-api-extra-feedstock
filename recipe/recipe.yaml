@@ -32,7 +32,7 @@ tests:
       imports:
         - array_api_extra
   - script:
-      - pytest -ra tests
+      - pytest -ra tests/main
     requirements:
       run:
         - python ${{ python_min }}.*
