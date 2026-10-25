@@ -1,5 +1,5 @@
 context:
-  version: "0.11.4"
+  version: "0.11.5"
   python_min: '3.11'
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/array-api-extra/array_api_extra-${{ version }}.tar.gz
-  sha256: 66236f72aaa4cdf97a3c5581696e3a9c89513714612a9bc6010e19fad1a22012
+  sha256: 1f0de7dde3326a7157a63ddbcfab7409b38248f0685e5a0670bd9044a54fcac0
 
 build:
   number: 0
